@@ -1,0 +1,723 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+.App{
+  background-color: aliceblue;
+  width: 60%;
+  height: 550px;
+  margin-left: 22%;
+  border-radius: 30px;
+  margin-top: 3%;
+  position: absolute;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.logo{
+  position: absolute;
+  margin-left: -35%;
+  margin-top: 0%;
+}
+.todo-list-item.completed .title {
+  text-decoration: line-through;
+  color: gray;
+}
+.flower{
+  position: absolute;
+  margin-left: 30%;
+  margin-top: -17%;
+ 
+
+}
+.flower1{
+position: absolute;
+margin-left: 81%;
+top: 50%;
+
+}
+.flower2{
+  position: absolute;
+  margin-left: -4%;
+  top: 50%;
+  
+  }
+
+.edit__wrapper{
+  margin-left: 20%;
+}
+body{
+  /* background-color: #62825D; */
+  color: #526E48;
+  background-color: #62825dce;
+
+  
+}
+.h1{
+  text-align: center;
+  padding-top: 10px;
+  font-size: 45px;
+}
+.todo-wrapper {
+  background-color: #353434;
+  padding: 2%;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 30vh;
+  box-shadow: 0px 5px 7px rgb(61, 60, 60);
+  border-radius: 3px;
+  margin-top: -2%;
+  margin-bottom: 2%;
+}
+.todo-input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+.todo-input-item{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  
+}
+.todo-input-item label{
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  
+
+}
+.todo-input-item input{
+  padding: 8px;
+  border: none;
+  width: 150px;
+  margin-left: 2%;
+}
+.todo-input-item input:focus{
+
+  outline: 2px solid #EED3B1;
+}
+.primaryBtn{
+  background-color:#EED3B1 ;
+  color: #1F4529;
+  border: none;
+  margin-top: 0px;
+  padding: 10px;
+  width: 60px;
+  cursor: pointer;
+  margin-left: 2%;
+  border-radius:20px;
+  font-weight: bold;
+}
+.primaryBtn:active{
+  background-color: #1F4529;
+  color: #EED3B1;
+  
+}
+.secondryBtn{
+  background-color:#EED3B1;
+  color: #14341c;
+  border: none;
+  margin-top: 25px;
+  padding: 10px;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 5%;
+  margin-left: 5%;
+  font-weight: bold;
+ 
+}
+.active{
+  background-color:rgb(14, 155, 72) ;
+}
+.btn-area{
+  margin-bottom: 0px;
+  
+}
+.todo-list{
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  overflow-y: auto;
+  height: 230px;
+  margin-left: 5%;
+  width: 83%;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+/* ::-webkit-scrollbar-thumb{
+  background:linear-gradient(#526E48,#393f37 50%,#393f37 50%,#526E48);
+  border-radius: 10px;
+} */
+
+
+.todo-list-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-left: 15%;
+  width: 78%;
+  margin-top: 8px;
+  border-bottom:  1px solid gray;
+  
+  
+}
+.buttons{
+  margin-right: 10%;
+  display: flex;
+  border: none;
+}
+
+.title{
+  font-size: 20px;
+  color: #1F4529;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-left: 8px;
+
+}
+.dateList{
+  font-size: 12px;
+  color: #1F4529;
+  margin-bottom: 2%;
+}
+.fa-check-circle{
+  color: green;
+  
+  
+}
+.fa-edit{
+  color: blue;
+}
+.fa-trash{
+  color: red;
+}
+
+
+
+/* 
+ @media screen and (min-width: 1530px){
+  .App{
+    background-color: aliceblue;
+    width: 60%;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: 0px;
+  }
+  .flower{
+    position: absolute;
+    margin-left: 23%;
+    margin-top: -8%;
+  
+  }
+  .flower1{
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 25%;
+    
+    }
+    .flower2{
+      position: absolute;
+      margin-left: -4%;
+      margin-top: 25%;
+      
+      }
+      .todo-list{
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        overflow-y: auto;
+        height: 450px;
+        
+      }
+  
+}  */
+
+@media screen and  (max-width: 1560px) and (min-width: 1400px){
+  .App{
+    background-color: aliceblue;
+    width: 60%;
+    height: 730px;
+    margin-left: 22%;
+    border-radius: 30px;
+     margin-top: 4%;
+     position: absolute;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .flower{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -14%;
+    width: 60%;
+   
+  
+  }
+  .flower1{
+  position: absolute;
+  margin-left: 81%;
+  top: 49%;
+  
+  }
+  .flower2{
+    position: absolute;
+    margin-left: -4%;
+    top: 50%;
+    
+    }
+    .logo{
+      position: absolute;
+      margin-left: -35%;
+      margin-top: -6%;
+    }
+    .todo-wrapper {
+      background-color: #353434;
+      padding: 2%;
+      width:80%;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 30vh;
+      box-shadow: 0px 5px 7px rgb(61, 60, 60);
+      border-radius: 3px;
+      margin-top: 3%;
+      margin-bottom: 5%;
+    }
+    .todo-list{
+      display: flex;
+      flex-direction: column;
+      background-color: aliceblue;
+      overflow-y: auto;
+      height: 370px;
+      margin-left: 5%;
+      width: 83%;
+      border-radius: 10px;
+    }
+
+}
+
+
+@media screen and  (max-width: 1400px) and (min-width: 1380px){
+  .App{
+    background-color: aliceblue;
+    width: 60%;
+    height: 670px;
+    margin-left: 22%;
+    border-radius: 30px;
+     margin-top: 15%;
+     position: absolute;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .flower{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -16%;
+   
+  
+  }
+  .flower1{
+  position: absolute;
+  margin-left: 81%;
+  top: 53%;
+  
+  }
+  .flower2{
+    position: absolute;
+    margin-left: -4%;
+    top: 54%;
+    
+    }
+    .logo{
+      position: absolute;
+      margin-left: -35%;
+      margin-top: -15%;
+    }
+    .todo-wrapper {
+      background-color: #353434;
+      padding: 2%;
+      width:80%;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 30vh;
+      box-shadow: 0px 5px 7px rgb(61, 60, 60);
+      border-radius: 3px;
+      margin-top: 3%;
+      margin-bottom: 5%;
+    }
+
+
+}
+@media screen and  (max-width: 1045px) and (min-width: 950px){
+  .App{
+    background-color: aliceblue;
+    width: 60%;
+    height: 630px;
+    margin-left: 22%;
+    border-radius: 30px;
+     margin-top: 15%;
+     position: absolute;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .flower{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -16%;
+   
+  
+  }
+  .flower1{
+  position: absolute;
+  margin-left: 81%;
+  top: 60%;
+  
+  }
+  .flower2{
+    position: absolute;
+    margin-left: -4%;
+    top: 61%;
+    
+    }
+    .logo{
+      position: absolute;
+      margin-left: -35%;
+      margin-top: -15%;
+    }
+    .todo-wrapper {
+      background-color: #353434;
+      padding: 2%;
+      width:89%;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 30vh;
+      box-shadow: 0px 5px 7px rgb(61, 60, 60);
+      border-radius: 3px;
+      margin-top: 3%;
+      margin-bottom: 5%;
+    }
+
+    .todo-list{
+      display: flex;
+      flex-direction: column;
+      background-color: aliceblue;
+      overflow-y: auto;
+      height: 280px;
+      margin-left: 5%;
+      width: 83%;
+      border-radius: 10px;
+    }
+}
+@media screen and  (max-width: 950px) and (min-width: 876px){
+  .App{
+    background-color: aliceblue;
+    width: 75%;
+    height: 650px;
+    margin-left: 15%;
+    border-radius: 30px;
+     margin-top: 15%;
+     position: absolute;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .flower{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -16%;
+   
+  
+  }
+  .flower1{
+  position: absolute;
+  margin-left: 81%;
+  top: 56%;
+  
+  }
+  .flower2{
+    position: absolute;
+    margin-left: -4%;
+    top: 56.5%;
+    
+    }
+    .logo{
+      position: absolute;
+      margin-left: -18%;
+      margin-top: -19%;
+    }
+    .todo-wrapper {
+      background-color: #353434;
+      padding: 2%;
+      width:89%;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 30vh;
+      box-shadow: 0px 5px 7px rgb(61, 60, 60);
+      border-radius: 3px;
+      margin-top: 3%;
+      margin-bottom: 5%;
+    }
+
+    .todo-list{
+      display: flex;
+      flex-direction: column;
+      background-color: aliceblue;
+      overflow-y: auto;
+      height: 280px;
+      margin-left: 5%;
+      width: 83%;
+      border-radius: 10px;
+    }
+    body{
+      /* background-color: #62825D; */
+      color: #526E48;
+      background-color: #62825dce;
+      overflow:visible;
+      
+    }
+}
+
+
+@media screen and  (max-width: 876px) and (min-width: 724px){
+  .App{
+    background-color: aliceblue;
+    width: 75%;
+    height: 700px;
+    margin-left: 15%;
+    border-radius: 30px;
+     margin-top: 15%;
+     position: absolute;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .flower{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -16%;
+   
+  
+  }
+  .flower1{
+  position: absolute;
+  margin-left: 81%;
+  top: 60%;
+  
+  }
+  .flower2{
+    position: absolute;
+    margin-left: -4%;
+    top: 60.5%;
+    
+    }
+    .logo{
+      position: absolute;
+      margin-left: -18%;
+      margin-top: -19%;
+    }
+    .todo-wrapper {
+      background-color: #353434;
+      padding: 2%;
+      width:89%;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 30vh;
+      box-shadow: 0px 5px 7px rgb(61, 60, 60);
+      border-radius: 3px;
+      margin-top: 3%;
+      margin-bottom: 5%;
+    }
+
+    .todo-list{
+      display: flex;
+      flex-direction: column;
+      background-color: aliceblue;
+      overflow-y: auto;
+      height: 330px;
+      margin-left: 5%;
+      width: 83%;
+      border-radius: 10px;
+    }
+    body{
+      /* background-color: #62825D; */
+      color: #526E48;
+      background-color: #62825dce;
+      overflow:visible;
+      
+    }
+
+
+}
+@media screen and  (max-width: 724px) and (min-width: 667px){
+  .App{
+    background-color: aliceblue;
+    width: 80%;
+    height: 700px;
+    margin-left: 10%;
+    border-radius: 30px;
+     margin-top: 24%;
+     position: absolute;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .flower{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -16%;
+   
+  
+  }
+  .flower1{
+  position: absolute;
+  margin-left: 81%;
+  top: 68%;
+  
+  }
+  .flower2{
+    position: absolute;
+    margin-left: -4%;
+    top: 68.5%;
+    
+    }
+    .logo{
+      position: absolute;
+      margin-left: -12%;
+      margin-top: -25%;
+    }
+    .todo-wrapper {
+      background-color: #353434;
+      padding: 2%;
+      width:89%;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 30vh;
+      box-shadow: 0px 5px 7px rgb(61, 60, 60);
+      border-radius: 3px;
+      margin-top: 3%;
+      margin-bottom: 5%;
+    }
+
+    .todo-list{
+      display: flex;
+      flex-direction: column;
+      background-color: aliceblue;
+      overflow-y: auto;
+      height: 360px;
+      margin-left: 3%;
+      width: 90%;
+      border-radius: 10px;
+    }
+    body{
+      /* background-color: #62825D; */
+      color: #526E48;
+      background-color: #62825dce;
+      overflow:visible;
+      
+    }
+
+
+}
+
+@media screen  and (max-width:667px){
+  .App{
+    background-color: aliceblue;
+    width: 80%;
+    height: 900px;
+    margin-left: 10%;
+    border-radius: 30px;
+     margin-top: 26%;
+     position: absolute;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .flower{
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -24%;
+    width: 90%;
+   
+  
+  }
+  .flower1{
+  position: absolute;
+  margin-left: 81%;
+  top: 77%;
+  
+  }
+  .flower2{
+    position: absolute;
+    margin-left: -4%;
+    top: 77.5%;
+    
+    }
+    .logo{
+      position: absolute;
+      margin-left: 3%;
+      margin-top: -34%;
+      width: 35%;
+    }
+    .todo-wrapper {
+      background-color: #353434;
+      padding: 2%;
+      width:max-content;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 80vh;
+      box-shadow: 0px 5px 7px rgb(61, 60, 60);
+      border-radius: 3px;
+      margin-top: 3%;
+      margin-bottom: 5%;
+    }
+
+    .todo-list{
+      display: flex;
+      flex-direction: column;
+      background-color: aliceblue;
+      overflow-y: auto;
+      height: 360px;
+      margin-left: 3%;
+      width: 90%;
+      border-radius: 10px;
+    }
+    body{
+      /* background-color: #62825D; */
+      color: #526E48;
+      background-color: #62825dce;
+      overflow:visible;
+      
+    }
+    .todo-input-item{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      
+    }
+    .primaryBtn{
+      background-color:#EED3B1 ;
+      color: #1F4529;
+      border: none;
+      margin-top: 10px;
+      padding: 10px;
+      width: 60px;
+      cursor: pointer;
+      margin-left: 2%;
+      border-radius:20px;
+      font-weight: bold;
+    }
+    .todo-input-item input{
+      padding: 8px;
+      border: none;
+      width: 150px;
+      margin-left: 7%;
+    }
+
+   
+    
+
+  
+}
+
+  

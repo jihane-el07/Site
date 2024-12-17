@@ -1,0 +1,33 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+body.home-body {
+    background: white; 
+  }
+  
+body.calculator-body {
+    display: flex;
+    justify-content: center;
+    height: 100vh; 
+    margin: 0;
+    overflow: hidden; 
+    /* background: url('../src/pages/calculatrice/img3.jpg') ;  */
+   
+  }
+body.cards-body{
+  background: white; 
+  overflow: visible;
+
+}
+body.todo-body{
+  background-color: #62825dce;
+  overflow: hidden;
+  
+}
+
+body.flags-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #b6bdf5;
+}

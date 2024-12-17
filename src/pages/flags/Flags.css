@@ -1,0 +1,119 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #b6bdf5;
+}
+h1{
+  font-size: 40px;
+}
+
+.App {
+  padding: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.flag-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.flag-card {
+  background-color: #808ad7cb;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  width: 16%;
+  height: 150px;
+}
+
+.flag-card img {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+.flag-card h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.flag-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-buttons {
+  margin-top: 20px;
+}
+
+.pagination-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.pagination-buttons button:disabled {
+  background-color: #ccc;
+  cursor: none;
+  cursor: not-allowed;
+}
+
+.pagination-buttons button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.country-details {
+  text-align: center;
+  background-color: #808ad7cb;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.country-details img {
+  width: 200px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #ff5733;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #c43d1d;
+}
