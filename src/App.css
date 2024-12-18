@@ -1,8 +1,14 @@
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
 body.home-body {
-    background: white; 
+    background-image: url('../public/image/back1.jpg') ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 100vh; 
+    background-size:cover;
   }
+  
   
 body.calculator-body {
     display: flex;
@@ -10,16 +16,18 @@ body.calculator-body {
     height: 100vh; 
     margin: 0;
     overflow: hidden; 
-    /* background: url('../src/pages/calculatrice/img3.jpg') ;  */
+    background: url('../src/pages/calculatrice/img3.jpg') ; 
    
   }
 body.cards-body{
   background: white; 
   overflow: visible;
 
+
 }
 body.todo-body{
   background-color: #62825dce;
+  color: #526E48;
   overflow: hidden;
   
 }

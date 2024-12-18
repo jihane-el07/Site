@@ -41,7 +41,7 @@ function App() {
 
 
   return (
-    <div >
+    <div>
      <NavBar/>
      <Routes>
       <Route path='/' element={<Home/>} />
