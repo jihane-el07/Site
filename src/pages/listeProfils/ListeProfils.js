@@ -3,7 +3,7 @@ import CarteProfil from './CarteProfil'
 
 export default function ListeProfils({ profils, supprimerProfil }) {
   return (
-    <div className='d-flex flex-wrap justify-content-center'>
+    <div className='conCard'>
        {profils.map((profil, index) => ( 
         <div key={index}> 
         <CarteProfil 

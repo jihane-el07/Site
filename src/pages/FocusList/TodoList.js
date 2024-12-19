@@ -2,81 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Todo.css';
 
 function TodoList() {
-  // const [isCompleted, setIsComp] = useState(false);
-  // const [allTodos, setTodos] = useState([]);
-  // const [newTitle, setNewTitle] = useState('');
-  // const [newDescription, setNewDescription] = useState('');
-  // const [completedTodos, setCompletedTodos] = useState([]);
-  // const [currentEdit, setCurrentEdit] = useState("");
-  // const [currentEditedItem, setCurrentEditedItem] = useState("");
-
-  // Add a new todo
-  // const handleAddTodo = () => {
-  //   if (!newTitle || !newDescription) return; // Prevent empty todos
-  //   let newTodoItem = { title: newTitle, description: newDescription };
-  //   let updatedTodoArr = [...allTodos, newTodoItem];
-  //   setTodos(updatedTodoArr);
-  //   localStorage.setItem('todolist', JSON.stringify(updatedTodoArr));
-  //   setNewTitle(''); // Reset inputs
-  //   setNewDescription('');
-  // };
-
-  // // Delete a todo
-  // const handleDeleteTodo = (index) => {
-  //   let reducedTodo = [...allTodos];
-  //   reducedTodo.splice(index, 1);
-  //   setTodos(reducedTodo);
-  //   localStorage.setItem('todolist', JSON.stringify(reducedTodo));
-  // };
-
-  // Mark a task as complete
-  // const handleComplete = (index) => {
-  //   let now = new Date();
-  //   let completedOn = `${now.toLocaleDateString()} at ${now.toLocaleTimeString()}`;
-  //   let filteredItem = { ...allTodos[index], completedOn };
-  //   setCompletedTodos([...completedTodos, filteredItem]);
-  //   handleDeleteTodo(index);
-  //   localStorage.setItem('completedTodos', JSON.stringify([...completedTodos, filteredItem]));
-  // };
-
-  // // Delete a completed task
-  // const handleDeleteCompletedTodo = (index) => {
-  //   let reducedTodo = [...completedTodos];
-  //   reducedTodo.splice(index, 1);
-  //   setCompletedTodos(reducedTodo);
-  //   localStorage.setItem('completedTodos', JSON.stringify(reducedTodo));
-  // };
-
-  // Edit a task
-  // const handleEdit = (index, item) => {
-  //   setCurrentEdit(index);
-  //   setCurrentEditedItem(item);
-  // };
-
-  // // Update edited task details
-  // const handleUpdateTitle = (value) => {
-  //   setCurrentEditedItem((prev) => ({ ...prev, title: value }));
-  // };
-
-  // const handleUpdateDescription = (value) => {
-  //   setCurrentEditedItem((prev) => ({ ...prev, description: value }));
-  // };
-
-  // const handleUpdateToDo = () => {
-  //   let updatedTodos = [...allTodos];
-  //   updatedTodos[currentEdit] = currentEditedItem;
-  //   setTodos(updatedTodos);
-  //   setCurrentEdit("");
-  //   localStorage.setItem('todolist', JSON.stringify(updatedTodos));
-  // };
-
-  // Load todos from localStorage
-  // useEffect(() => {
-  //   let savedTodo = JSON.parse(localStorage.getItem('todolist'));
-  //   let savedCompletedTodo = JSON.parse(localStorage.getItem('completedTodos'));
-  //   if (savedTodo) setTodos(savedTodo);
-  //   if (savedCompletedTodo) setCompletedTodos(savedCompletedTodo);
-  // }, []);
 
 
   const [isCompleted, setIsComp] = useState(false);
@@ -141,15 +66,7 @@ function TodoList() {
       localStorage.setItem('todolist', JSON.stringify(updatedTodos));
     };
 
-    // const handleCheckboxChange = (index) => {
-    //   const updatedTodos = [...allTodos];
-    //   updatedTodos[index].completed = !updatedTodos[index].completed;
-    //   setTodos(updatedTodos);
-    //   localStorage.setItem('todolist', JSON.stringify(updatedTodos));
-      
-    // }; 
-
-
+ 
     
     const handleCheckboxChange = (index) => {
       const updatedTodos = [...allTodos];
@@ -187,10 +104,8 @@ function TodoList() {
 
   return (
     <>
-    
     <div className="App">
-      
-    <img src="image/logo.png" alt="" width='25%' className='logo' />
+    <img src="image/logo.png" alt="" width='20%' className='logo' />
     <div className='flower' >
     <img src="image/img.png" alt="" width='50%' />
     </div>

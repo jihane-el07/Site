@@ -16,7 +16,7 @@ export default function FormulaireProfils({ ajouterProfil}) {
     }
 
   return (
-    <div className='container-fluid w-50'>
+    <div className='form'>
         <form action=""  onSubmit={handleSubmit}>
         Nom : <input type="text"  name="nom" value={nom} onChange={(e)=>setNom(e.target.value)} className='form-control' /><br />
             Age : <input type="text" name="age" value={age} onChange={(e)=>setAge(e.target.value)} className='form-control' /><br />

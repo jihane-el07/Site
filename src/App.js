@@ -14,6 +14,7 @@ import Flags from './pages/flags/Flags';
 
 
 
+
 function App() {
   const location = useLocation();
 
@@ -41,8 +42,8 @@ function App() {
 
 
   return (
-    <div>
-     <NavBar/>
+    <div className='containers'>
+      <NavBar/>
      <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/Calcul' element={<Calculator/>}/>

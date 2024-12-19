@@ -13,9 +13,9 @@ export default function CarteProfil({nom,age,profession,image,onDelete }) {
   //         onDelete(); // Supprime si l'utilisateur confirme
   //     }
   // };
-  useEffect(() => {
-    import('bootstrap/dist/css/bootstrap.min.css');
-  }, []);
+  // useEffect(() => {
+  //   import('bootstrap/dist/css/bootstrap.min.css');
+  // }, []);
 
   return (
     <div className='card' style={{width:'18rem',margin:'1rem'}}>

@@ -1,21 +1,25 @@
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
+#root{
+  width: 100%;
+  margin: 0%;
+}
 body.home-body {
-    background-image: url('../public/image/back1.jpg') ;
+    /* background-image: url('../public/image/back1.jpg') ;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     height: 100vh; 
-    background-size:cover;
+    background-size:cover; */
+    background: none;
   }
-  
-  
+
 body.calculator-body {
     display: flex;
     justify-content: center;
     height: 100vh; 
     margin: 0;
-    overflow: hidden; 
+    /* overflow: hidden;  */
     background: url('../src/pages/calculatrice/img3.jpg') ; 
    
   }
@@ -28,8 +32,7 @@ body.cards-body{
 body.todo-body{
   background-color: #62825dce;
   color: #526E48;
-  overflow: hidden;
-  
+  overflow: visible;  
 }
 
 body.flags-body {
@@ -38,4 +41,5 @@ body.flags-body {
   padding: 0;
   text-align: center;
   background-color: #b6bdf5;
+  overflow: visible;
 }
