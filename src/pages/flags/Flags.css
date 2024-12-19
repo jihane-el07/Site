@@ -117,3 +117,114 @@ h1{
 .back-button:hover {
   background-color: #c43d1d;
 }
+@media screen and  (max-width: 724px) and (min-width: 622px){
+  h1{
+    font-size: 40px;
+    margin-top: 30%;
+  }
+  .flag-card {
+    background-color: #808ad7cb;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    width: 25%;
+    height: 150px;
+  }
+  
+
+}
+@media screen and  (max-width: 622px) and (min-width: 500px){
+  h1{
+    font-size: 40px;
+    margin-top: 40%;
+  }
+  .flag-card {
+    background-color: #808ad7cb;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    width: 30%;
+    height: 150px;
+  }
+}
+@media screen and  (max-width: 500px) and (min-width: 450px){
+  h1{
+    font-size: 40px;
+    margin-top: 50%;
+  }
+  .flag-card {
+    background-color: #808ad7cb;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    width: 30%;
+    height: 150px;
+  }
+  .country-details {
+    text-align: center;
+    background-color: #808ad7cb;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+@media screen and  (max-width: 450px) and (min-width: 350px){
+  h1{
+    font-size: 40px;
+    margin-top: 60%;
+  }
+  .flag-card {
+    background-color: #808ad7cb;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    width: 45%;
+    height: 150px;
+  }
+  .country-details {
+    text-align: center;
+    background-color: #808ad7cb;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 250px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+}
+@media screen and (max-width:350px){
+  h1{
+    font-size: 40px;
+    margin-top: 60%;
+  }
+  .flag-card {
+    background-color: #808ad7cb;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    width: 45%;
+    height: 150px;
+  }
+  .country-details {
+    text-align: center;
+    background-color: #808ad7cb;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 250px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+}

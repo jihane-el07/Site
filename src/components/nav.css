@@ -1,3 +1,4 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
 .custom-navbar {
     background-color: #333;
     padding: 20px 10px;
@@ -73,7 +74,8 @@
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 80px;
+      top: 5%;
+      z-index: 1;
       right: 0;
       background-color: #333;
       width: 100%;

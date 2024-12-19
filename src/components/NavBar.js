@@ -33,19 +33,25 @@ export default function Navbar() {
         <div className="custom-nav-collapse">
           <ul className="custom-navbar-nav">
             <li className="custom-nav-item">
-              <Link className="custom-nav-link" to="/">Home</Link>
+              <Link className="custom-nav-link" to="/">
+              <i className="fa-regular fa-house-heart"></i>
+              Home
+              </Link>
             </li>
             <li className="custom-nav-item">
-              <Link className="custom-nav-link" to="/Calcul">Calculator Project</Link>
+              <Link className="custom-nav-link" to="/Calcul"><i className="fa-regular fa-calculator"></i>Calculator Project</Link>
             </li>
             <li className="custom-nav-item">
-              <Link className="custom-nav-link" to="/Carts">CarteProfile Project</Link>
+            
+              <Link className="custom-nav-link" to="/Carts">
+              <i className="fa-regular fa-user"></i>
+              CarteProfile Project</Link>
             </li>
             <li className="custom-nav-item">
-              <Link className="custom-nav-link" to="/TodoList">TodoList</Link>
+              <Link className="custom-nav-link" to="/TodoList"><i className="fa-regular fa-list-check"></i>TodoList</Link>
             </li>
             <li className="custom-nav-item">
-              <Link className="custom-nav-link" to="/Flags">Flags</Link>
+              <Link className="custom-nav-link" to="/Flags"><i className="fa-regular fa-flag"></i> Flags</Link>
             </li>
           </ul>
         </div>
