@@ -17,7 +17,6 @@ import Flags from './pages/flags/Flags';
 
 function App() {
   const location = useLocation();
-
   useEffect(() => {
     console.log("Current Path:", location.pathname); // Debugging line
   
